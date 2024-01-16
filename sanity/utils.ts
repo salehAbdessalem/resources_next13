@@ -33,7 +33,7 @@ interface BuildQueryParams {
     params: string;
     key?: string;
     value?: string | null;
-    keysToRemove: string[];
+    keysToRemove?: string[];
   }
 
   export function formUrlQuery({ params, key, value, keysToRemove }: UrlQueryParams) {
@@ -46,8 +46,6 @@ interface BuildQueryParams {
     } else if(key && value) {
       currentUrl[key] = value;
     }
-
-    currentUrl[key] = value;
 
     return qs.stringifyUrl(
       { url: window.location.pathname, query: currentUrl },
