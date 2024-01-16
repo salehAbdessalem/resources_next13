@@ -5,6 +5,15 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Salah CMS',
   description: 'A site for filtering and searching with nextjs 13 sanity',
+  other: {
+    'theme-color': '#0d1117',
+    'color-scheme': 'dark-only',
+    "twitter:image": "https://i.ibb.to/d6TXxB2/homepage-thumbnail.jpg",
+    "twitter:card": "summary_large_image",
+    "og:url": "jsmastery.pro",
+    "og:image": "https://i.ibb.to/d6TXxB2/homepage-thumbnail.jpg",
+    "og:type": "website",
+  }
 }
 
 export default function RootLayout({
